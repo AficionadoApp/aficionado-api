@@ -40,6 +40,9 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     diff-lcs (1.2.3)
+    dotenv (0.9.0)
+    dotenv-rails (0.9.0)
+      dotenv (= 0.9.0)
     erubis (2.7.0)
     excon (0.31.0)
     execjs (2.0.2)
@@ -141,6 +144,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  dotenv-rails
   heroku
   jquery-rails
   pg
