@@ -1,1 +1,1 @@
-== Aficionado[link:https://github.com/dkorac/aficionado] Backend
+== {Aficionado}[https://github.com/dkorac/aficionado] Backend
