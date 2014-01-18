@@ -1,7 +1,6 @@
 class Post < ActiveRecord::Base
   belongs_to :piece
-
-  attr_accessible :accession_number, :name, :comment, :piece_id
+  attr_accessible :name, :comment, :accession_number
 
   validates :piece_id, presence: true
   validates :name, presence: true
