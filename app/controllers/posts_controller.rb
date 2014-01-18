@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   private
 
   def find_piece
-    @piece = Piece.where(accession_number: params[:id]).first_or_create
+    @piece = Piece.where(accession_number: params[:accession_number]).first_or_create
   end
 
 end
