@@ -24,6 +24,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-debugger'
   gem 'pry-nav'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -32,7 +33,6 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-bundler'
 end
