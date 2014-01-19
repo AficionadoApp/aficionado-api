@@ -9,7 +9,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
-
+gem 'heroku'
 gem 'jbuilder', '~> 1.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -20,13 +20,21 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development do
-  gem 'sqlite3'
-  gem 'capistrano'
+group :development, :test do
   gem 'pry'
   gem 'pry-debugger'
   gem 'pry-nav'
+end
+
+group :development do
+  gem 'capistrano'
   gem 'dotenv-rails'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
 end
 
 # Use ActiveModel has_secure_password
