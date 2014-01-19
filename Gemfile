@@ -35,6 +35,7 @@ end
 group :test do
   gem 'guard-rspec'
   gem 'guard-bundler'
+  gem 'webmock'
 end
 
 # Use ActiveModel has_secure_password
