@@ -1,6 +1,5 @@
 class Piece < ActiveRecord::Base
   has_many :posts
-  attr_accessible :accession_number
 
   BASE_URL = 'http://www.brooklynmuseum.org/opencollection/api/'
 

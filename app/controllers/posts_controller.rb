@@ -20,4 +20,7 @@ class PostsController < ApplicationController
     @piece = Piece.where(accession_number: params[:accession_number]).first_or_create
   end
 
+  def post_params
+    params.require(:post).permit(:name, :comment, :accession_number)
+  end
 end
